@@ -6,4 +6,4 @@ class SalesEmployee(BaseEmployee):
     self.sales_incentive = sales_incentive
 
   def get_pay(self):
-    return self.base_pay + self.bonus + self.sales_incentive
+    return super().get_pay() + self.sales_incentive
